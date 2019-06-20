@@ -1,8 +1,7 @@
 <?php
-include 'functions.php';
+$query = require 'bootstrap.php';
 
-$pdo =  connectToDb();
 
-$tasks = selectAll($pdo);
+$tasks = $query->selectAll('todos');
 
 require 'index.view.php';
