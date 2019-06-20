@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
+<?php require('views/partials/header.php'); ?>
+
 	<h1>ToDo Lists</h1>
 
 	<ul>
@@ -21,6 +16,4 @@
 		<?php endforeach ?>		
 	</ul>		
 
-
-</body>
-</html>
+<?php require('views/partials/footer.php'); ?>
