@@ -6,5 +6,6 @@
 </head>
 <body>
 	<h1>About Us</h1>
+	You are visiting <h3><?= $projectName; ?></h3>
 </body>
 </html>
