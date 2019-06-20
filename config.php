@@ -6,6 +6,8 @@ return [
 		'username'		=> 'root',
 		'password'		=> '',
 		'connection'	=> 'mysql:host=localhost',
-		'options'		=> []
+		'options'		=> [
+			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+		]
 	]
 ];
