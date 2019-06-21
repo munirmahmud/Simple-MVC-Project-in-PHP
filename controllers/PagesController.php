@@ -5,23 +5,23 @@ class PagesController
 	{
 		$tasks = App::get('database')->selectAll('todos');
 
-		require 'views/index.view.php';
+		return view('index', compact('tasks'));
 	}
 
 	public function about()
 	{
 		$projectName = 'Simple MVC Project';
 
-		require 'views/about.view.php';
+		return view('about', compact('projectName'));
 	}
 
 	public function contact()
 	{
-		require 'views/contact.view.php';	
+		return view('contact');	
 	}
 
 	public function ourCulture()
 	{
-		require 'views/about-culture.view.php';
+		return view('about-culture');
 	}
 }

@@ -3,18 +3,18 @@ class UserController
 {
     public function registerUser()
     {
-        require 'views/register-user.view.php';
+        return view('register-user'); 
     }
 
     public function users()
     {
 		$users = App::get('database')->selectAll('users');
 
-		require 'views/users.view.php';
+		return view('users', compact('users'));   
     }
 
 
-    public function insertUser()
+    public function store()
     {
 		App::get('database')->insert('users', [
 			'first_name'	=> trim(ucfirst($_POST['first_name'])),
