@@ -2,7 +2,8 @@
 
 	<h1>Register User</h1>
 	<form method="POST" action="/users">
-		<input type="text" name="name" placeholder="Your Name">
+		<input type="text" name="first_name" placeholder="First Name">
+		<input type="text" name="last_name" placeholder="Last Name">
 		<input type="email" name="email" placeholder="Your Email">
 		<button type="submit" name="submit">Submit</button>
 	</form>
