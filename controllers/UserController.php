@@ -22,6 +22,6 @@ class UserController
 			'email'			=> trim($_POST['email'])
 		]);
 
-		header("Location: users");
+        return redirect('users');		
     }
 }
