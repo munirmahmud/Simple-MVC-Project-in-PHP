@@ -1,4 +1,6 @@
 <?php
+use App\controllers\{UserController, PagesController};
+
 
 $router->get('', 'PagesController@home');
 $router->get('about', 'PagesController@about');

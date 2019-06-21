@@ -1,4 +1,6 @@
 <?php
+namespace App\core;
+
 class Router
 {
 	protected $routes = [
@@ -26,8 +28,6 @@ class Router
     public function direct($uri, $requestType)
     {
     	if (array_key_exists($uri, $this->routes[$requestType])) {
-             //die(var_dump($this->routes[$requestType][$uri]));
-    		// return $this->routes[$requestType][$uri];
             return $this->callAction(
                 ...explode('@', $this->routes[$requestType][$uri])
             );    		
@@ -38,7 +38,9 @@ class Router
 
     protected function callAction($controller, $action)
     {
+        $controller = "App\\controllers\\{$controller}";
         $controller = new $controller;
+
         if (! method_exists($controller, $action)) {
             throw new Exception("{$controller} does not respond to the {$action} actoin");
         }

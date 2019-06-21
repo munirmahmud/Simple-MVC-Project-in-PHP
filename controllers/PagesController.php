@@ -1,4 +1,9 @@
 <?php
+namespace App\controllers;
+
+use App\core\App;
+
+
 class PagesController
 {
     public function home()
