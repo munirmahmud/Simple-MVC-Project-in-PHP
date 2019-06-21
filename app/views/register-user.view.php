@@ -1,4 +1,4 @@
-<?php require('views/partials/header.php'); ?>
+<?php require('app/views/partials/header.php'); ?>
 
 	<h1>Register User</h1>
 	<form method="POST" action="/insert-user">
@@ -8,4 +8,4 @@
 		<button type="submit" name="submit">Submit</button>
 	</form>
 
-<?php require('views/partials/footer.php'); ?>
+<?php require('app/views/partials/footer.php'); ?>

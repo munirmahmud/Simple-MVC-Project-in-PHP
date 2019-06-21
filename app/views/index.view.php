@@ -1,4 +1,4 @@
-<?php require('views/partials/header.php'); ?>
+<?php require('app/views/partials/header.php'); ?>
 
 	<h1>ToDo Lists</h1>
 
@@ -16,4 +16,4 @@
 		<?php endforeach ?>		
 	</ul>		
 
-<?php require('views/partials/footer.php'); ?>
+<?php require('app/views/partials/footer.php'); ?>
