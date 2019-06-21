@@ -1,9 +1,10 @@
 <?php
 
-$router->get('', 'controllers/index.php');
-$router->get('about', 'controllers/about.php');
-$router->get('about/culture', 'controllers/about-culture.php');
-$router->get('contact', 'controllers/contact.php');
-$router->get('register-user', 'controllers/register-user.php');
-$router->get('users', 'controllers/users.php');
-$router->post('insert-user', 'controllers/insert-user.php');
+$router->get('', 'PagesController@home');
+$router->get('about', 'PagesController@about');
+$router->get('about/culture', 'PagesController@ourCulture');
+$router->get('contact', 'PagesController@contact');
+
+$router->get('register-user', 'UserController@registerUser');
+$router->get('users', 'UserController@users');
+$router->post('insert-user', 'UserController@store');
