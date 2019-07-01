@@ -1,6 +1,12 @@
 <?php
 class Connection
 {
+    /**
+    * Create a database connection using PDO class 
+    *
+    * @param $config an associative array
+    * @return string database details
+    */
     public static function make($config)
     {
 		try {
